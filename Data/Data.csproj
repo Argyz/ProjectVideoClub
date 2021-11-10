@@ -55,6 +55,10 @@
     <Compile Include="Migrations\202111101510337_Migration10112021.designer.cs">
       <DependentUpon>202111101510337_Migration10112021.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111102338427_10112021Second.cs" />
+    <Compile Include="Migrations\202111102338427_10112021Second.designer.cs">
+      <DependentUpon>202111102338427_10112021Second.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VideoContext.cs" />
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202111101510337_Migration10112021.resx">
       <DependentUpon>202111101510337_Migration10112021.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111102338427_10112021Second.resx">
+      <DependentUpon>202111102338427_10112021Second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
