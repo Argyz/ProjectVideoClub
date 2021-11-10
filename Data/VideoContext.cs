@@ -5,7 +5,7 @@ namespace Data
 {
     public class VideoContext : DbContext
     {
-        public VideoContext() : base()
+        public VideoContext() : base(@"Data Source=DESKTOP-AKCIL0Q\ALEXDEV;Initial Catalog=VideoClub;User Id=sa; Password=hackingadict;")
         {
 
         }

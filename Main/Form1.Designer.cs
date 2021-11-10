@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnModifyMovie = new System.Windows.Forms.Button();
+            this.btnRemoveMovie = new System.Windows.Forms.Button();
             this.btnAddMovie = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
@@ -43,8 +43,9 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlNavMovie = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
@@ -55,14 +56,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(904, 54);
+            this.panel1.Size = new System.Drawing.Size(892, 54);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.pnlNavMovie);
+            this.panel2.Controls.Add(this.btnModifyMovie);
+            this.panel2.Controls.Add(this.btnRemoveMovie);
             this.panel2.Controls.Add(this.btnAddMovie);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnAbout);
@@ -78,37 +80,39 @@
             this.panel2.Size = new System.Drawing.Size(160, 562);
             this.panel2.TabIndex = 1;
             // 
-            // button3
+            // btnModifyMovie
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Window;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(0, 339);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.button3.Size = new System.Drawing.Size(160, 47);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Modify";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnModifyMovie.FlatAppearance.BorderSize = 0;
+            this.btnModifyMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifyMovie.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnModifyMovie.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnModifyMovie.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModifyMovie.Location = new System.Drawing.Point(0, 339);
+            this.btnModifyMovie.Name = "btnModifyMovie";
+            this.btnModifyMovie.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.btnModifyMovie.Size = new System.Drawing.Size(160, 47);
+            this.btnModifyMovie.TabIndex = 9;
+            this.btnModifyMovie.Text = "Modify";
+            this.btnModifyMovie.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnModifyMovie.UseVisualStyleBackColor = true;
+            this.btnModifyMovie.Click += new System.EventHandler(this.btnModifyMovie_Click);
             // 
-            // button2
+            // btnRemoveMovie
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Window;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(0, 295);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.button2.Size = new System.Drawing.Size(160, 47);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Remove";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnRemoveMovie.FlatAppearance.BorderSize = 0;
+            this.btnRemoveMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveMovie.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnRemoveMovie.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnRemoveMovie.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRemoveMovie.Location = new System.Drawing.Point(0, 295);
+            this.btnRemoveMovie.Name = "btnRemoveMovie";
+            this.btnRemoveMovie.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.btnRemoveMovie.Size = new System.Drawing.Size(160, 47);
+            this.btnRemoveMovie.TabIndex = 8;
+            this.btnRemoveMovie.Text = "Remove";
+            this.btnRemoveMovie.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRemoveMovie.UseVisualStyleBackColor = true;
+            this.btnRemoveMovie.Click += new System.EventHandler(this.btnRemoveMovie_Click);
             // 
             // btnAddMovie
             // 
@@ -125,6 +129,7 @@
             this.btnAddMovie.Text = "Add";
             this.btnAddMovie.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAddMovie.UseVisualStyleBackColor = true;
+            this.btnAddMovie.Click += new System.EventHandler(this.btnAddMovie_Click);
             // 
             // label2
             // 
@@ -157,7 +162,7 @@
             // 
             // pnlNav
             // 
-            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(232)))), ((int)(((byte)(166)))));
+            this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(36)))), ((int)(((byte)(232)))));
             this.pnlNav.Location = new System.Drawing.Point(0, 47);
             this.pnlNav.Name = "pnlNav";
             this.pnlNav.Size = new System.Drawing.Size(6, 104);
@@ -265,8 +270,18 @@
             this.pnlContainer.Location = new System.Drawing.Point(160, 54);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlContainer.Size = new System.Drawing.Size(744, 562);
+            this.pnlContainer.Size = new System.Drawing.Size(732, 562);
             this.pnlContainer.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(152, 505);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(450, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Sistema de Gestion y Ventas grupo 8. Todos los Derechos Reservados";
             // 
             // label1
             // 
@@ -275,33 +290,31 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(186, 215);
+            this.label1.Location = new System.Drawing.Point(184, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(379, 79);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido";
             // 
-            // label3
+            // pnlNavMovie
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(167, 505);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(387, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Sistema de Ventas grupo 9. Todos los Derechos Reservados";
+            this.pnlNavMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(232)))), ((int)(((byte)(166)))));
+            this.pnlNavMovie.Location = new System.Drawing.Point(0, 251);
+            this.pnlNavMovie.Name = "pnlNavMovie";
+            this.pnlNavMovie.Size = new System.Drawing.Size(6, 104);
+            this.pnlNavMovie.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(904, 616);
+            this.ClientSize = new System.Drawing.Size(892, 616);
             this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MaximumSize = new System.Drawing.Size(920, 655);
-            this.MinimumSize = new System.Drawing.Size(920, 655);
+            this.MaximumSize = new System.Drawing.Size(908, 655);
+            this.MinimumSize = new System.Drawing.Size(908, 655);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -328,10 +341,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnModifyMovie;
+        private System.Windows.Forms.Button btnRemoveMovie;
         private System.Windows.Forms.Button btnAddMovie;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel pnlNavMovie;
     }
 }
 
