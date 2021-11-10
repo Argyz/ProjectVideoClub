@@ -62,10 +62,85 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSecondary\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormAdd.Designer.cs">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormAddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormAddMovie.Designer.cs">
+      <DependentUpon>FormAddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormModify.Designer.cs">
+      <DependentUpon>FormModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormModifyMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormModifyMovie.Designer.cs">
+      <DependentUpon>FormModifyMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormRemove.Designer.cs">
+      <DependentUpon>FormRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormRemoveMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormRemoveMovie.Designer.cs">
+      <DependentUpon>FormRemoveMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecondary\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecondary\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormAdd.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormModify.resx">
+      <DependentUpon>FormModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormRemove.resx">
+      <DependentUpon>FormRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,6 +170,7 @@
     <Content Include="Resource\add_user_male_24px.png" />
     <Content Include="Resource\change_user_24px.png" />
     <Content Include="Resource\homeWhite_24px.png" />
+    <Content Include="Resource\more_info_24px.png" />
     <Content Include="Resource\no_user_24px.png" />
     <Content Include="Resource\settings_24px.png" />
   </ItemGroup>
