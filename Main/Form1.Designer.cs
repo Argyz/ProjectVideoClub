@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlNavMovie = new System.Windows.Forms.Panel();
             this.btnModifyMovie = new System.Windows.Forms.Button();
             this.btnRemoveMovie = new System.Windows.Forms.Button();
             this.btnAddMovie = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlNavMovie = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +79,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 562);
             this.panel2.TabIndex = 1;
+            // 
+            // pnlNavMovie
+            // 
+            this.pnlNavMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(232)))), ((int)(((byte)(166)))));
+            this.pnlNavMovie.Location = new System.Drawing.Point(0, 251);
+            this.pnlNavMovie.Name = "pnlNavMovie";
+            this.pnlNavMovie.Size = new System.Drawing.Size(6, 104);
+            this.pnlNavMovie.TabIndex = 3;
             // 
             // btnModifyMovie
             // 
@@ -295,14 +303,6 @@
             this.label1.Size = new System.Drawing.Size(379, 79);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido";
-            // 
-            // pnlNavMovie
-            // 
-            this.pnlNavMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(232)))), ((int)(((byte)(166)))));
-            this.pnlNavMovie.Location = new System.Drawing.Point(0, 251);
-            this.pnlNavMovie.Name = "pnlNavMovie";
-            this.pnlNavMovie.Size = new System.Drawing.Size(6, 104);
-            this.pnlNavMovie.TabIndex = 3;
             // 
             // Form1
             // 

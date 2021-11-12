@@ -16,5 +16,25 @@ namespace Main.FormSecondary
         {
             InitializeComponent();
         }
+
+        private void btnAceptar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnAceptar.BackColor = Color.FromArgb(0, 204, 153);
+        }
+
+        private void btnAceptar_MouseLeave(object sender, EventArgs e)
+        {
+            btnAceptar.BackColor = Color.White;
+        }
+
+        private void btnLimpiar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnLimpiar.BackColor = Color.FromArgb(255, 80, 80);
+        }
+
+        private void btnLimpiar_MouseLeave(object sender, EventArgs e)
+        {
+            btnLimpiar.BackColor = Color.White;
+        }
     }
 }

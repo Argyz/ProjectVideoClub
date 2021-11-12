@@ -51,11 +51,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ServiceBase\DTOs\BaseDto.cs" />
+    <Compile Include="ServiceClient\ClientService.cs" />
+    <Compile Include="ServiceClient\DTOs\ClientDto.cs" />
+    <Compile Include="ServiceClient\IServiceClient\IClientService.cs" />
+    <Compile Include="ServiceMovie\DTOs\MovieDto.cs" />
+    <Compile Include="ServiceMovie\IServiceMovie\IMovieService.cs" />
+    <Compile Include="ServiceMovie\MovieService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicePerson\DTOs\PersonDto.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{ed9848b8-fc23-45f7-896e-b90797d775d2}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{4409edff-c2ee-422b-8ad1-2f2ac168d00e}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

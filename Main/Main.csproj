@@ -127,8 +127,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSecondary\FormAdd.resx">
       <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormAddMovie.resx">
+      <DependentUpon>FormAddMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSecondary\FormHome.resx">
       <DependentUpon>FormHome.cs</DependentUpon>
@@ -136,8 +142,14 @@
     <EmbeddedResource Include="FormSecondary\FormModify.resx">
       <DependentUpon>FormModify.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormModifyMovie.resx">
+      <DependentUpon>FormModifyMovie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSecondary\FormRemove.resx">
       <DependentUpon>FormRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecondary\FormRemoveMovie.resx">
+      <DependentUpon>FormRemoveMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSecondary\FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>
@@ -165,7 +177,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Project>{cd76d0c0-33c2-4832-8efd-385003937904}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Resource\add_user_male_24px.png" />
     <Content Include="Resource\change_user_24px.png" />

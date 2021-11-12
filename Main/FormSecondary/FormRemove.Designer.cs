@@ -41,23 +41,23 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(138, 431);
+            this.panel1.Size = new System.Drawing.Size(86, 431);
             this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(406, 0);
+            this.panel2.Location = new System.Drawing.Point(458, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(283, 431);
+            this.panel2.Size = new System.Drawing.Size(120, 431);
             this.panel2.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(209, 148);
+            this.label1.Location = new System.Drawing.Point(220, 167);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 20);
             this.label1.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(291, 150);
+            this.textBox1.Location = new System.Drawing.Point(302, 167);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(29, 20);
             this.textBox1.TabIndex = 3;
@@ -74,9 +74,9 @@
             // 
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(213, 258);
+            this.btnEliminar.Location = new System.Drawing.Point(224, 232);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(107, 38);
+            this.btnEliminar.Size = new System.Drawing.Size(107, 31);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 431);
+            this.ClientSize = new System.Drawing.Size(578, 431);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);

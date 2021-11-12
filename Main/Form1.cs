@@ -83,6 +83,8 @@ namespace Main
             pnlNav.Visible = false;
             pnlNavMovie.Top = btnAddMovie.Top;
             pnlNavMovie.Height = btnAddMovie.Height;
+
+            controlsForms(new FormAddMovie());
         }
 
         private void btnRemoveMovie_Click(object sender, EventArgs e)
@@ -91,6 +93,8 @@ namespace Main
             pnlNav.Visible = false;
             pnlNavMovie.Top=btnRemoveMovie.Top;
             pnlNavMovie.Height= btnRemoveMovie.Height;
+            
+            controlsForms(new FormRemoveMovie());
         }
 
         private void btnModifyMovie_Click(object sender, EventArgs e)
@@ -99,6 +103,8 @@ namespace Main
             pnlNav.Visible = false;
             pnlNavMovie.Top = btnModifyMovie.Top;
             pnlNavMovie.Height = btnModifyMovie.Height;
+
+            controlsForms(new FormModifyMovie());
         }
     }
 }
