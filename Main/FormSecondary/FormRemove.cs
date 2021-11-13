@@ -12,6 +12,7 @@ namespace Main.FormSecondary
 {
     public partial class FormRemove : Form
     {
+        private int id;
         public FormRemove()
         {
             InitializeComponent();
@@ -25,6 +26,11 @@ namespace Main.FormSecondary
         private void btnEliminar_MouseLeave(object sender, EventArgs e)
         {
             btnEliminar.BackColor = Color.White;
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
 
         }
     }

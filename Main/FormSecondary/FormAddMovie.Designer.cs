@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboGender = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -68,12 +68,12 @@
             this.panel2.Size = new System.Drawing.Size(120, 431);
             this.panel2.TabIndex = 2;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(265, 107);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(265, 107);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(145, 20);
+            this.txtNombre.TabIndex = 3;
             // 
             // label2
             // 
@@ -85,13 +85,32 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Genero";
             // 
-            // comboBox1
+            // cboGender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(265, 166);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(145, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Items.AddRange(new object[] {
+            "Accion",
+            "Aventura",
+            "Ciencia Ficcion",
+            "Comedia",
+            "NoFiccion",
+            "Drama",
+            "Fantasia",
+            "Musical",
+            "Suspense",
+            "Terror",
+            "Animación",
+            "Crimen",
+            "Belicas",
+            "Policiacas",
+            "Historicas",
+            "Deportivas",
+            "Western"});
+            this.cboGender.Location = new System.Drawing.Point(265, 166);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(145, 21);
+            this.cboGender.TabIndex = 5;
             // 
             // label3
             // 
@@ -103,12 +122,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Fecha";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(265, 226);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(145, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtpFecha.CustomFormat = "";
+            this.dtpFecha.Location = new System.Drawing.Point(265, 226);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(145, 20);
+            this.dtpFecha.TabIndex = 7;
             // 
             // btnAceptar
             // 
@@ -120,6 +140,7 @@
             this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             this.btnAceptar.MouseLeave += new System.EventHandler(this.btnAceptar_MouseLeave);
             this.btnAceptar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnAceptar_MouseMove);
             // 
@@ -143,11 +164,11 @@
             this.ClientSize = new System.Drawing.Size(578, 431);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboGender);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -164,11 +185,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboGender;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnLimpiar;
     }

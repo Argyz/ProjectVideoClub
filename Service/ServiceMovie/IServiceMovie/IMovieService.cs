@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Service.ServiceMovie.IServiceMovie
+﻿namespace Service.ServiceMovie.IServiceMovie
 {
-    internal interface IMovieService
+    public interface IMovieService
     {
+        void Agregar();
+        void Eliminar();
+        void Modificar();
+        void getMovies();
+
     }
 }

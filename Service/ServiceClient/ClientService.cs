@@ -1,6 +1,7 @@
 ﻿using Data;
 using Entity;
 using Service.ServiceClient.DTOs;
+using System.Linq;
 
 namespace Service.ServiceClient
 {
@@ -10,7 +11,17 @@ namespace Service.ServiceClient
         {
             using (var ctx = new VideoContext())
             {
-                var cliente = new Client();
+                var cliente = new Client() { Name=dto.Name, LastName=dto.LastName,Pelicula=dto.Pelicula,Removed=false};
+                  
+                ctx.Clients.Add(cliente);
+                ctx.SaveChanges();
+            }
+
+            using (var ctx=new VideoContext())
+            {
+                var cliente = ctx.Clients.Where(x => x.Name == dto.Name).FirstOrDefault();
+
+                var movie = new Movie() { Name = dto.Pelicula, Client = cliente };
             }
         }
 

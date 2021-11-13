@@ -1,22 +1,27 @@
-﻿using System;
+﻿using Service.ServiceClient;
+using Service.ServiceClient.DTOs;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Service.Client;
-using Service.Client.DTOs;
+
 
 namespace Main.FormSecondary
 {
     public partial class FormAdd : Form
     {
         private ClientService clientService;
+        private string nombre;
+        private string apellido;
+        private string pelicula;
         public FormAdd()
         {
+            InitializeComponent();
             clientService = new ClientService();
         }
 
         private void btnAceptar_MouseMove(object sender, MouseEventArgs e)
         {
-           btnAceptar.BackColor = Color.FromArgb(0, 204, 153);
+            btnAceptar.BackColor = Color.FromArgb(0, 204, 153);
         }
 
         private void btnAceptar_MouseLeave(object sender, EventArgs e)
@@ -27,23 +32,37 @@ namespace Main.FormSecondary
         private void btnLimpiar_MouseMove(object sender, MouseEventArgs e)
         {
             btnLimpiar.BackColor = Color.FromArgb(255, 80, 80);
+
         }
 
         private void btnLimpiar_MouseLeave(object sender, EventArgs e)
         {
-            btnLimpiar.BackColor = Color.White; 
+            btnLimpiar.BackColor = Color.White;
+
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtName.Text=="" || txtUser.Text=="" || txtLastName.Text=="")
+            if (txtName.Text == "" || txtPelicula.Text == "" || txtLastName.Text == "")
             {
-                MessageBox.Show("Los campos no pueden estar vacios","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Los campos no pueden estar vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else{
-                var dto = new ClientDto() { Name=txtName.Text, LastName=txtLastName.Text, User=txtUser.Text, Removed=false};
+            else
+            {
+                nombre = txtName.Text;
+                apellido = txtLastName.Text;
+                pelicula = txtPelicula.Text;
+                var dto = new ClientDto() { Name = nombre, LastName = apellido, Pelicula = pelicula };
                 clientService.Agregar(dto);
+                MessageBox.Show("El cliente se cargo exitosamente");
             }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            txtLastName.Text = "";
+            txtPelicula.Text = ""; 
         }
     }
 }

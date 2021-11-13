@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Migration10112021 : DbMigration
+    public partial class _12112021_uno : DbMigration
     {
         public override void Up()
         {
@@ -12,9 +12,9 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        User = c.String(nullable: false),
-                        Name = c.String(nullable: false),
-                        LastName = c.String(nullable: false),
+                        User = c.String(nullable: false, maxLength: 30),
+                        Name = c.String(nullable: false, maxLength: 30),
+                        LastName = c.String(nullable: false, maxLength: 30),
                         Removed = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
@@ -24,8 +24,8 @@
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Name = c.String(nullable: false),
-                        Gender = c.String(nullable: false),
+                        Name = c.String(nullable: false, maxLength: 30),
+                        Gender = c.String(),
                         Date = c.DateTime(nullable: false),
                         Removed = c.Boolean(nullable: false),
                         Client_Id = c.Int(),

@@ -4,6 +4,6 @@ namespace Service.ServiceClient.DTOs
 {
     public class ClientDto : PersonDto
     {
-        public string User { get; set; }
+        public string Pelicula { get; set; }
     }
 }

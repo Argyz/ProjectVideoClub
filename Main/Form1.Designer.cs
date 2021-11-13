@@ -77,7 +77,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 54);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 562);
+            this.panel2.Size = new System.Drawing.Size(160, 514);
             this.panel2.TabIndex = 1;
             // 
             // pnlNavMovie
@@ -159,7 +159,7 @@
             this.btnAbout.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnAbout.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.Image")));
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAbout.Location = new System.Drawing.Point(0, 475);
+            this.btnAbout.Location = new System.Drawing.Point(0, 427);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.btnAbout.Size = new System.Drawing.Size(160, 47);
@@ -185,7 +185,7 @@
             this.btnSetting.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSetting.Location = new System.Drawing.Point(0, 522);
+            this.btnSetting.Location = new System.Drawing.Point(0, 474);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.btnSetting.Size = new System.Drawing.Size(160, 40);
@@ -278,14 +278,14 @@
             this.pnlContainer.Location = new System.Drawing.Point(160, 54);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlContainer.Size = new System.Drawing.Size(732, 562);
+            this.pnlContainer.Size = new System.Drawing.Size(732, 514);
             this.pnlContainer.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(152, 505);
+            this.label3.Location = new System.Drawing.Point(146, 474);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(450, 17);
             this.label3.TabIndex = 1;
@@ -298,7 +298,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(184, 215);
+            this.label1.Location = new System.Drawing.Point(169, 169);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(379, 79);
             this.label1.TabIndex = 0;
@@ -308,13 +308,13 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(892, 616);
+            this.ClientSize = new System.Drawing.Size(892, 568);
             this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MaximumSize = new System.Drawing.Size(908, 655);
-            this.MinimumSize = new System.Drawing.Size(908, 655);
+            this.MaximumSize = new System.Drawing.Size(908, 607);
+            this.MinimumSize = new System.Drawing.Size(908, 607);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

@@ -51,13 +51,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202111101510337_Migration10112021.cs" />
-    <Compile Include="Migrations\202111101510337_Migration10112021.designer.cs">
-      <DependentUpon>202111101510337_Migration10112021.cs</DependentUpon>
+    <Compile Include="Migrations\202111121557448_12112021_uno.cs" />
+    <Compile Include="Migrations\202111121557448_12112021_uno.designer.cs">
+      <DependentUpon>202111121557448_12112021_uno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111102338427_10112021Second.cs" />
-    <Compile Include="Migrations\202111102338427_10112021Second.designer.cs">
-      <DependentUpon>202111102338427_10112021Second.cs</DependentUpon>
+    <Compile Include="Migrations\202111121610563_12112021_dos.cs" />
+    <Compile Include="Migrations\202111121610563_12112021_dos.designer.cs">
+      <DependentUpon>202111121610563_12112021_dos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111121622405_12112021_tres.cs" />
+    <Compile Include="Migrations\202111121622405_12112021_tres.designer.cs">
+      <DependentUpon>202111121622405_12112021_tres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111131424469_13112021.cs" />
+    <Compile Include="Migrations\202111131424469_13112021.designer.cs">
+      <DependentUpon>202111131424469_13112021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111131552391_13112021_dos.cs" />
+    <Compile Include="Migrations\202111131552391_13112021_dos.designer.cs">
+      <DependentUpon>202111131552391_13112021_dos.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,11 +86,20 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202111101510337_Migration10112021.resx">
-      <DependentUpon>202111101510337_Migration10112021.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111121557448_12112021_uno.resx">
+      <DependentUpon>202111121557448_12112021_uno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202111102338427_10112021Second.resx">
-      <DependentUpon>202111102338427_10112021Second.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111121610563_12112021_dos.resx">
+      <DependentUpon>202111121610563_12112021_dos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111121622405_12112021_tres.resx">
+      <DependentUpon>202111121622405_12112021_tres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111131424469_13112021.resx">
+      <DependentUpon>202111131424469_13112021.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111131552391_13112021_dos.resx">
+      <DependentUpon>202111131552391_13112021_dos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

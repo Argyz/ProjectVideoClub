@@ -1,12 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Service.ServiceMovie.IServiceMovie;
 namespace Service.ServiceMovie
 {
-    public class MovieService
+    public class MovieService : IMovieService
     {
+        public void Agregar()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Eliminar()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void getMovies()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Modificar()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

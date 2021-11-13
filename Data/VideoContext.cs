@@ -10,6 +10,7 @@ namespace Data
 
         }
 
+        public DbSet<StockMovie> StockMovies { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Movie> Movies { get; set; }
     }

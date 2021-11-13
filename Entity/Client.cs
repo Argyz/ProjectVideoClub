@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entity
 {
     public class Client : Person
     {
         [Required(ErrorMessage = "Error el campo es obligatorio")]
-        [MaxLength(30, ErrorMessage = "Oops...hubo un error. El campo no puede exceder lo 30 caracteres")]
-        public string User { get; set; }
-
+        [MaxLength(50, ErrorMessage = "Oops...hubo un error. El campo no puede exceder lo 30 caracteres")]
+        public string Pelicula { get; set; }
         public ICollection<Movie> Movies { get; set; }
         
 
