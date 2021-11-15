@@ -19,7 +19,7 @@ namespace Service.ServiceClient
         {
             using (var ctx = new VideoContext())
             {
-                var cliente = new Client() { Name=dto.Name, LastName=dto.LastName,Pelicula=dto.Pelicula,Removed=false};
+                var cliente = new Client() { Name=dto.Name, LastName=dto.LastName,Removed=false};
                   
                 ctx.Clients.Add(cliente);
                 ctx.SaveChanges();
@@ -30,6 +30,9 @@ namespace Service.ServiceClient
                 var cliente = ctx.Clients.Where(x => x.Name == dto.Name).FirstOrDefault();
 
                 var movie = new Movement() { Name = dto.Pelicula, Client = cliente };
+
+                ctx.Movements.Add(movie);
+                ctx.SaveChanges();
             }
         }
 
@@ -68,7 +71,7 @@ namespace Service.ServiceClient
 
                 client.Name = dto.Name;
                 client.LastName= dto.LastName;
-                client.Pelicula= dto.Pelicula;
+                
 
                 ctx.SaveChanges();
             }
@@ -83,7 +86,7 @@ namespace Service.ServiceClient
 
             dtoreturn.Name = client1.Name;
             dtoreturn.LastName = client1.LastName;
-            dtoreturn.Pelicula = client1.Pelicula;
+            
 
             return dtoreturn;
         }
