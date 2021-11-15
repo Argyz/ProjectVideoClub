@@ -2,7 +2,7 @@
 
 namespace Entity
 {
-    public class Movie : EntityBase
+    public class Movement : EntityBase
     {
         [Required(ErrorMessage = "Error el campo es obligatorio")]
         [MaxLength(30, ErrorMessage = "Oops...hubo un error. El campo no puede exceder lo 30 caracteres")]

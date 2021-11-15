@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIdMovie = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -59,16 +59,16 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(220, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Id Cliente";
+            this.label1.Text = "Id Pelicula";
             // 
-            // textBox1
+            // txtIdMovie
             // 
-            this.textBox1.Location = new System.Drawing.Point(302, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(29, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtIdMovie.Location = new System.Drawing.Point(302, 167);
+            this.txtIdMovie.Name = "txtIdMovie";
+            this.txtIdMovie.Size = new System.Drawing.Size(29, 20);
+            this.txtIdMovie.TabIndex = 4;
             // 
             // btnEliminar
             // 
@@ -80,6 +80,9 @@
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.btnEliminar.MouseLeave += new System.EventHandler(this.btnEliminar_MouseLeave);
+            this.btnEliminar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnEliminar_MouseMove);
             // 
             // FormRemoveMovie
             // 
@@ -87,7 +90,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 431);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIdMovie);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -104,7 +107,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdMovie;
         private System.Windows.Forms.Button btnEliminar;
     }
 }

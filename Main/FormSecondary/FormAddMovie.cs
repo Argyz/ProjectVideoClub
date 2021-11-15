@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Service.ServiceMovie.DTOs;
 
 namespace Main.FormSecondary
 {
@@ -11,6 +12,7 @@ namespace Main.FormSecondary
         private string genero;
         private string nombre;
         private string fecha;
+        private int cantidad;
         public FormAddMovie()
         {
             InitializeComponent();
@@ -39,7 +41,7 @@ namespace Main.FormSecondary
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text=="" || cboGender.SelectedItem==null)
+            if (txtNombre.Text=="" || cboGender.SelectedItem==null || nudAmount.Value==0)
             {
                 MessageBox.Show("Los campos no pueden estar vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -48,8 +50,13 @@ namespace Main.FormSecondary
                 nombre = txtNombre.Text;
                 genero = cboGender.SelectedItem.ToString();
                 fecha = dtpFecha.Value.ToString("dd/MM/yyyy");
-                
-                
+                cantidad = (int)nudAmount.Value;
+
+                var dto = new MovieDto() {Name=nombre, Gender=genero, Date=fecha, Amount=cantidad};
+
+                service.Agregar(dto);
+
+                MessageBox.Show("La carga fue exitosa");
             }
         }
     }

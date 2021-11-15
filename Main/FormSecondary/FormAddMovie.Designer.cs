@@ -38,13 +38,16 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.txtAmount = new System.Windows.Forms.Label();
+            this.nudAmount = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(156, 107);
+            this.label1.Location = new System.Drawing.Point(156, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 0;
@@ -70,7 +73,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(265, 107);
+            this.txtNombre.Location = new System.Drawing.Point(227, 86);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(145, 20);
             this.txtNombre.TabIndex = 3;
@@ -79,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(156, 167);
+            this.label2.Location = new System.Drawing.Point(159, 143);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 4;
@@ -107,7 +110,7 @@
             "Historicas",
             "Deportivas",
             "Western"});
-            this.cboGender.Location = new System.Drawing.Point(265, 166);
+            this.cboGender.Location = new System.Drawing.Point(228, 143);
             this.cboGender.Name = "cboGender";
             this.cboGender.Size = new System.Drawing.Size(145, 21);
             this.cboGender.TabIndex = 5;
@@ -116,7 +119,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(156, 227);
+            this.label3.Location = new System.Drawing.Point(159, 193);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 6;
@@ -125,7 +128,7 @@
             // dtpFecha
             // 
             this.dtpFecha.CustomFormat = "";
-            this.dtpFecha.Location = new System.Drawing.Point(265, 226);
+            this.dtpFecha.Location = new System.Drawing.Point(227, 193);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(145, 20);
             this.dtpFecha.TabIndex = 7;
@@ -148,7 +151,7 @@
             // 
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(321, 309);
+            this.btnLimpiar.Location = new System.Drawing.Point(283, 309);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(89, 31);
             this.btnLimpiar.TabIndex = 9;
@@ -157,11 +160,31 @@
             this.btnLimpiar.MouseLeave += new System.EventHandler(this.btnLimpiar_MouseLeave);
             this.btnLimpiar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnLimpiar_MouseMove);
             // 
+            // txtAmount
+            // 
+            this.txtAmount.AutoSize = true;
+            this.txtAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount.Location = new System.Drawing.Point(159, 241);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(73, 20);
+            this.txtAmount.TabIndex = 10;
+            this.txtAmount.Text = "Cantidad";
+            // 
+            // nudAmount
+            // 
+            this.nudAmount.Location = new System.Drawing.Point(238, 241);
+            this.nudAmount.Name = "nudAmount";
+            this.nudAmount.Size = new System.Drawing.Size(37, 20);
+            this.nudAmount.TabIndex = 11;
+            this.nudAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // FormAddMovie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 431);
+            this.Controls.Add(this.nudAmount);
+            this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.dtpFecha);
@@ -175,6 +198,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAddMovie";
             this.Text = "FormAddMovie";
+            ((System.ComponentModel.ISupportInitialize)(this.nudAmount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +216,7 @@
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label txtAmount;
+        private System.Windows.Forms.NumericUpDown nudAmount;
     }
 }

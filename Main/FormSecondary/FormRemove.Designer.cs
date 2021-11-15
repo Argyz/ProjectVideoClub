@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -63,12 +63,12 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Id Cliente";
             // 
-            // textBox1
+            // txtIdCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(302, 167);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(29, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtIdCliente.Location = new System.Drawing.Point(302, 167);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(29, 20);
+            this.txtIdCliente.TabIndex = 3;
             // 
             // btnEliminar
             // 
@@ -90,7 +90,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(578, 431);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIdCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -107,7 +107,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdCliente;
         private System.Windows.Forms.Button btnEliminar;
     }
 }

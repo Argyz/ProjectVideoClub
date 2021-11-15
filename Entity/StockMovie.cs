@@ -10,5 +10,6 @@ namespace Entity
         public string Name { get; set; }
         public string Gender { get; set; }
         public string Date { get; set; }
+        public int Amount { get; set; }
     }
 }

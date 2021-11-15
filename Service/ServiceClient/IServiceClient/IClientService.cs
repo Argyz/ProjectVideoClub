@@ -7,6 +7,8 @@ namespace Service.ServiceClient.IServiceClient
         void Agregar(ClientDto dto);
         void Eliminar(long id);
         void Modificar(ClientDto dto);
-        void getCliente();
+        bool findClient(int id);
+        ClientDto getClient(int id);
+        void getClients();
     }
 }

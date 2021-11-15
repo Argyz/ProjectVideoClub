@@ -70,7 +70,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(265, 82);
+            this.txtName.Location = new System.Drawing.Point(227, 82);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(145, 20);
             this.txtName.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(265, 141);
+            this.txtLastName.Location = new System.Drawing.Point(227, 141);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(145, 20);
             this.txtLastName.TabIndex = 6;
@@ -110,7 +110,7 @@
             // 
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(321, 309);
+            this.btnLimpiar.Location = new System.Drawing.Point(283, 309);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(89, 31);
             this.btnLimpiar.TabIndex = 10;
@@ -132,7 +132,7 @@
             // 
             // txtPelicula
             // 
-            this.txtPelicula.Location = new System.Drawing.Point(265, 204);
+            this.txtPelicula.Location = new System.Drawing.Point(227, 204);
             this.txtPelicula.Name = "txtPelicula";
             this.txtPelicula.Size = new System.Drawing.Size(145, 20);
             this.txtPelicula.TabIndex = 12;

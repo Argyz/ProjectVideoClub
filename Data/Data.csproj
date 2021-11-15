@@ -71,6 +71,10 @@
     <Compile Include="Migrations\202111131552391_13112021_dos.designer.cs">
       <DependentUpon>202111131552391_13112021_dos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111150331316_15112021.cs" />
+    <Compile Include="Migrations\202111150331316_15112021.designer.cs">
+      <DependentUpon>202111150331316_15112021.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VideoContext.cs" />
@@ -100,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111131552391_13112021_dos.resx">
       <DependentUpon>202111131552391_13112021_dos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111150331316_15112021.resx">
+      <DependentUpon>202111150331316_15112021.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

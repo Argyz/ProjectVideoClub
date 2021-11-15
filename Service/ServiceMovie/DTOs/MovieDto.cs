@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Service.ServiceBase.DTOs;
 
 namespace Service.ServiceMovie.DTOs
 {
-    public class MovieDto
+    public class MovieDto : BaseDto
     {
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public string Date { get; set; }
+        public int Amount { get; set; }
     }
 }
