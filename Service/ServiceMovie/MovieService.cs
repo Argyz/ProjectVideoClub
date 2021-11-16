@@ -4,6 +4,7 @@ using Data;
 using Entity;
 using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Service.ServiceMovie
 {
@@ -11,10 +12,14 @@ namespace Service.ServiceMovie
     {
         private StockMovie movieRecup;
         private MovieDto dtoReturn;
-
+        private MovieDto dto;
+        private List<MovieDto> movieDtos;
+        private List<StockMovie> movies;
         public MovieService()
         {
             dtoReturn = new MovieDto();
+            movieDtos = new List<MovieDto>();
+            movies = new List<StockMovie>();    
         }
         public void Agregar(MovieDto dto)
         {
@@ -85,11 +90,21 @@ namespace Service.ServiceMovie
             
         }
 
-        public void getMovies()
+        public List<MovieDto> getMovies()
         {
-            throw new System.NotImplementedException();
+            using (var ctx = new VideoContext())
+            {
+                movies = ctx.StockMovies.Where(x=>x.Removed==false).ToList();
+            }
+
+            foreach (var item in movies)
+            {
+                dto = new MovieDto() { Id = item.Id, Name = item.Name, Gender=item.Gender, Date=item.Date, Amount=item.Amount};
+                movieDtos.Add(dto);
+            }
+
+            return movieDtos;
         }
 
-       
     }
 }

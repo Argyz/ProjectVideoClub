@@ -1,4 +1,5 @@
 ﻿using Service.ServiceMovie.DTOs;
+using System.Collections.Generic;
 
 namespace Service.ServiceMovie.IServiceMovie
 {
@@ -7,7 +8,8 @@ namespace Service.ServiceMovie.IServiceMovie
         void Agregar(MovieDto dto);
         void Eliminar(int id);
         void Modificar(MovieDto dto);
-        void getMovies();
+        MovieDto getPelicula(int id);
+        List<MovieDto> getMovies();
 
     }
 }

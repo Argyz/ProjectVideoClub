@@ -1,4 +1,6 @@
-﻿using Service.ServiceClient.DTOs;
+﻿using Entity;
+using Service.ServiceClient.DTOs;
+using System.Collections.Generic;
 
 namespace Service.ServiceClient.IServiceClient
 {
@@ -9,6 +11,6 @@ namespace Service.ServiceClient.IServiceClient
         void Modificar(ClientDto dto);
         bool findClient(int id);
         ClientDto getClient(int id);
-        void getClients();
+        List<ClientDto> getClients();
     }
 }

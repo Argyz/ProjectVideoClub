@@ -2,6 +2,7 @@
 using Entity;
 using Service.ServiceClient.DTOs;
 using Service.ServiceClient.IServiceClient;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Service.ServiceClient
@@ -10,10 +11,15 @@ namespace Service.ServiceClient
     {
         private Client client1;
         private ClientDto dtoreturn;
-
+        private Movement movement;
+        private ClientDto dto;
+        private List<Client> clients;
+        private List<ClientDto> clientDtos;
         public ClientService()
         {
             dtoreturn = new ClientDto();
+            clients = new List<Client>();
+            clientDtos = new List<ClientDto>();
         }
         public void Agregar(ClientDto dto)
         {
@@ -71,8 +77,14 @@ namespace Service.ServiceClient
 
                 client.Name = dto.Name;
                 client.LastName= dto.LastName;
-                
+               
+                ctx.SaveChanges();
+            }
 
+            using (var ctx=new VideoContext())
+            {
+                var movement = ctx.Movements.Where(x => x.Name == dto.Pelicula).FirstOrDefault();
+                movement.Name = dto.Pelicula;
                 ctx.SaveChanges();
             }
         }
@@ -82,6 +94,7 @@ namespace Service.ServiceClient
             using (var ctx=new VideoContext())
             {
                 client1 = ctx.Clients.Find(id);
+                
             }
 
             dtoreturn.Name = client1.Name;
@@ -91,9 +104,21 @@ namespace Service.ServiceClient
             return dtoreturn;
         }
 
-        public void getClients()
+        public List<ClientDto> getClients()
         {
-            throw new System.NotImplementedException();
+            using (var ctx = new VideoContext())
+            {
+               clients=ctx.Clients.Where(x=> x.Removed==false).ToList();
+            }
+
+            foreach (var item in clients)
+            {
+                dto = new ClientDto() { Id=item.Id, Name=item.Name, LastName=item.LastName};
+                clientDtos.Add(dto);
+            }
+
+            return clientDtos;
+            
         }
 
         

@@ -56,7 +56,7 @@ namespace Main.FormSecondary
 
                 if (!result)
                 {
-                    MessageBox.Show("La pelicula no existe", "CUIDADO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El cliente con ese Id no existe", "CUIDADO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -64,32 +64,37 @@ namespace Main.FormSecondary
 
                     txtName.Enabled = true;
                     txtName.Text = returndto.Name;
-                    txtApellido.Enabled=true;
-                    txtApellido.Text = returndto.LastName;
+                    txtLastName.Enabled=true;
+                    txtLastName.Text = returndto.LastName;
                     txtPelicula.Enabled=true;
                     txtPelicula.Text = returndto.Pelicula;
 
+                    btnModificar.Enabled = true;
                 }
             }
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (txtName.Text=="" || txtApellido.Text=="" || txtPelicula.Text=="")
+            if (label2.Text=="" || label3.Text=="" || txtPelicula.Text=="")
             {
                 MessageBox.Show("Los campos no pueden estar vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                nombre=txtName.Text;
-                apellido=txtApellido.Text;
-                pelicula=txtPelicula.Text;
 
+                nombre=txtName.Text.ToLower();
+                apellido=txtLastName.Text.ToLower();
+                pelicula=txtPelicula.Text.ToLower();
+
+                dto.Id=id;
                 dto.Name = nombre;
                 dto.LastName = apellido;
                 dto.Pelicula = pelicula;
 
                 clientService.Modificar(dto);
+
+                MessageBox.Show("Su modificacion fue exitosa");
             }
         }
     }
