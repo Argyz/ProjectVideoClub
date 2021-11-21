@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 using Main.FormSecondary;
+using Main.Login;
 
 namespace Main
 {
@@ -8,10 +10,13 @@ namespace Main
     {
         
         private Form activeForm=null;
+        private FormLogin frmLogin;
+
         public Form1()
         {
             InitializeComponent();
-            
+            frmLogin = new FormLogin();
+            frmLogin.ShowDialog();
         }
 
 
@@ -105,6 +110,13 @@ namespace Main
             pnlNavMovie.Height = btnModifyMovie.Height;
 
             controlsForms(new FormModifyMovie());
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            Process proceso = new Process();
+            proceso.StartInfo.FileName = @"X:\Documentos\Martin\VisualStudio\source\repos\Lab2Again\VideoClubX\ProjectVideoClub\Main\Resource\index.html";
+            proceso.Start();
         }
     }
 }

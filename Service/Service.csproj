@@ -55,6 +55,7 @@
     <Compile Include="ServiceClient\ClientService.cs" />
     <Compile Include="ServiceClient\DTOs\ClientDto.cs" />
     <Compile Include="ServiceClient\IServiceClient\IClientService.cs" />
+    <Compile Include="ServiceLogin\LoginService.cs" />
     <Compile Include="ServiceMovie\DTOs\MovieDto.cs" />
     <Compile Include="ServiceMovie\IServiceMovie\IMovieService.cs" />
     <Compile Include="ServiceMovie\MovieService.cs" />

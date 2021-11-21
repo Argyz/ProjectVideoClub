@@ -154,6 +154,9 @@
     <EmbeddedResource Include="FormSecondary\FormSetting.resx">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -186,6 +189,7 @@
   <ItemGroup>
     <Content Include="Resource\add_user_male_24px.png" />
     <Content Include="Resource\change_user_24px.png" />
+    <Content Include="Resource\delete_50px.png" />
     <Content Include="Resource\homeWhite_24px.png" />
     <Content Include="Resource\more_info_24px.png" />
     <Content Include="Resource\no_user_24px.png" />

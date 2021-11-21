@@ -108,7 +108,8 @@ namespace Service.ServiceClient
         {
             using (var ctx = new VideoContext())
             {
-               clients=ctx.Clients.Where(x=> x.Removed==false).ToList();
+               //clients=ctx.Clients.Where(x=> x.Removed==false).ToList();
+               clients=ctx.Clients.Where(x=>x.Removed==false).OrderBy(x=>x.Id).ToList();
             }
 
             foreach (var item in clients)

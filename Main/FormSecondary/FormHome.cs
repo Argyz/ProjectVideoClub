@@ -24,8 +24,6 @@ namespace Main.FormSecondary
             clientDtos=clientService.getClients();
 
             fillData();
-            //dgvClients.DataSource = clientService.getClients();
-            //dgvStockMovies.DataSource = movieService.getMovies();
         }
 
         private void fillData()

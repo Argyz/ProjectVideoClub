@@ -167,6 +167,7 @@
             this.btnAbout.Text = "About Us";
             this.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAbout.UseVisualStyleBackColor = true;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // pnlNav
             // 
